@@ -1,0 +1,33 @@
+<div class="wrapper text-center">
+   <%= link_to "Add Company", new_company_path, class: "btn btn-primary" %>
+</div>
+<% @companies.each do |company|  %>
+  <div class="company card">
+    <div class='company-upvote'>
+      <div class="company-arrow"></div>
+      <div class='company-count'>95</div>
+    </div>
+    <%= image_tag "http://placehold.it/45x30", class: "company-image hidden-xs"%>
+    <div class='company-body'>
+      <h3><%= company.nomen_long %></h3>
+      <p>SIREN : <%= company.siren %></p>
+      <p>Code Postal : <%= company.codpos %></p>
+      <p>Ville : <%= company.comet %></p>
+      <p><i class="fa fa-phone-square" aria-hidden="true"></i> : <%= company.telephone %></p>
+      <p><i class="fa fa-globe" aria-hidden="true"></i> : <%= company.website %></p>
+    </div>
+    <ul class="list-inline company-controls company-controls-hidden hidden-sm hidden-xs">
+      <li><a href=""><i class="fa fa-heart"></i></a></li>
+      <li><a href=""><i class="fa fa-share"></i></a></li>
+      <li><a href=""><i class="fa fa-star"></i></a></li>
+    </ul>
+    <%= link_to "", company_path(company), class: "card-link" %>
+  </div>
+<% end %>
+<div class="wrapper text-center">
+  <h2>Import Companies</h2>
+    <%= form_tag import_companies_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag "Import" %>
+    <% end %>
+</div>

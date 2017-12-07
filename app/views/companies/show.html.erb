@@ -1,0 +1,19 @@
+<div class="wrapper text-center">
+  <%= image_tag "http://placehold.it/100x100", class: "company-image hidden-xs padded"%>
+  <h1><%= @company.name %></h1>
+  <div class="col-md-3 col-md-offset-2">
+    <div class="company-body text-left">
+    <p>Registration number : <%= @company.registration_number %></p>
+    <p>VAT number : <%= @company.VAT_number %></p>
+    <p><i class="fa fa-phone-square" aria-hidden="true"></i> : <%= @company.telephone %></p>
+    <p><i class="fa fa-globe" aria-hidden="true"></i> : <%= @company.website %></p>
+    </div>
+  </div>
+  <div class="col-md-6 col-md-offset-3">
+    <ul class="list-inline">
+      <li><%= button_to "Back", companies_path, method: :get, class: "btn btn-info" %></li>
+      <li><%= button_to "Update Company", edit_company_path(@company), method: :get, class: "btn btn-primary" %></li>
+      <li><%= button_to "Delete Company", company_path(@company), method: :delete, data: { confirm: "Are you sure?"} , class: "btn btn-danger" %></li>
+    </ul>
+  </div>
+</div>

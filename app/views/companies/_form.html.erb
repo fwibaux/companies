@@ -1,0 +1,312 @@
+<%= simple_form_for @company do |f| %>
+  <%= f.error_notification %>
+      <div class="form-inputs">
+        <%= f.input :siren,  label: "SIREN", placeholder: "SIREN"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :nic,  label: "Numero interne de classement", placeholder: "NIC"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l1_normalised,  label: "Adresse", placeholder: "Adresse ligne 1"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l2_normalised,  label: "Adresse", placeholder: "Adresse ligne 2"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l3_normalised,  label: "Adresse", placeholder: "Adresse ligne 3"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l4_normalised,  label: "Adresse", placeholder: "Adresse ligne 4"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l5_normalised,  label: "Adresse", placeholder: "Adresse ligne 5"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l6_normalised,  label: "Adresse", placeholder: "Adresse ligne 6"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l7_normalised,  label: "Adresse", placeholder: "Adresse ligne 7"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l1_declared,  label: "Adresse", placeholder: "Adresse ligne 1"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l2_declared,  label: "Adresse", placeholder: "Adresse ligne 2"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l3_declared,  label: "Adresse", placeholder: "Adresse ligne 3"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l4_declared,  label: "Adresse", placeholder: "Adresse ligne 4"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l5_declared,  label: "Adresse", placeholder: "Adresse ligne 5"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l6_declared,  label: "Adresse", placeholder: "Adresse ligne 6"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :l7_declared,  label: "Adresse", placeholder: "Adresse ligne 7"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :numvoie,  label: "Numero", placeholder: "Numero"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :indrep,  label: "Indice de répétition", placeholder: "Bis Ter..."%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :typvoie,  label: "Type de voie", placeholder: "rue, bd, av..."%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libvoie,  label: "Libellé voie", placeholder: "Eugène Varlin"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :codpos,  label: "Code postal", placeholder: "75010"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :cedex,  label: "Cedex", placeholder: "Cedex"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :rpet,  label: "Région de l'établissement", placeholder: "11"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libreg,  label: "Libellé région de l'établissement", placeholder: "Ile de France"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :depet,  label: "Dept de l'établissement", placeholder: "75"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :arronet,  label: "Arrondissement de l'établissement", placeholder: "10"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :ctonet,  label: "Canton de l'établissement", placeholder: "XXXX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :comet,  label: "Commune de l'établissement", placeholder: "XXXX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :comet,  label: "Libellé commune de l'établissement", placeholder: "XXXX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :du,  label: "Dept de l'unité urbaine", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :tu,  label: "Taille de l'unité urbaine", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :uu,  label: "Numero de l'unité urbaine", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :uu,  label: "Numero de l'unité urbaine", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :epci,  label: "Localisation de l'établissement dans un EPCI", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :tcd,  label: "Tranche de commune détaillé", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :zemet,  label: "Zone d'emploi", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :siege,  label: "Qualité de siège ?"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :enseigne,  label: "Enseigne", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :ind_puplipo,  label: "Indicateur du champ de puplipostage", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :diffcom,  label: "Statut de diffusion de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :amintret,  label: "Année et mois d'introduction dans la base de diffusion", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :natetab,  label: "Nature de l'etablissement d'un EI (entrepreneur individuel", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libnatetab,  label: "Libellé de la nature de l'etablissement d'un EI (entrepreneur individuel", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :apet700,  label: "Activité principale de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libapet,  label: "Libellé de l'activité principale de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :dapet,  label: "Année de validité de l'activité principale de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :tefet,  label: "Tranche d'effectif salarié de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libtefet,  label: "Libellé de la tranche d'effectif salarié de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :efetcent,  label: "Effectif salarié de l'établissement à la centaine près", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :defet,  label: "Année de validité de l'effectif salarié de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :origine,  label: "Origine de la création de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :dcret,  label: "Année et mois de la création de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :ddebact,  label: "Date de début d'activité", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :activnat,  label: "Nature de l'activité", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :lieuact,  label: "Lieu de l'activité", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :actisurf,  label: "Type de magasin", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :saisonat,  label: "Caractère saisonnier de l'activité", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :modet,  label: "Modalité de l'activité principale de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :prodet,  label: "Caractère productif de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :prodpart,  label: "Participation particulière à la production de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :prodpart,  label: "Caractère auxiliaire de l'activité de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :auxilt,  label: "Caractère auxiliaire de l'activité de l'établissement", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :nomen_long,  label: "Nom ou raison sociale de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :sigle,  label: "Sigle de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :nom,  label: "Nom de naissance", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :prenom,  label: "Prénom", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :cvilite,  label: "Civilité des entrepreneurs individuels", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :rna,  label: "Numéro d’identification au répertoire national des associations", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :nicsiege ,  label: "Numéro interne de classement de l’établissement siège", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :rpen,  label: "Région de localisation du siège de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :depcomen,  label: "Département et commune de localisation du siège de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :adr_mail,  label: "Adresse mail", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :nj,  label: "Nature juridique de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libnj,  label: "Libellé de la nature juridique", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :apen700,  label: "Activité principale de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libapen,  label: "Libellé de l’activité principale de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :dapen,  label: "Année de validité de l’activité principale de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :aprm,  label: "Activité principale au registre des métiers", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :ess,  label: "Appartenance au champ de l’économie sociale et solidaire", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :dateess,  label: "Date ESS", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :tefen,  label: "Tranche d’effectif salarié de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :libefen,  label: "Libellé de la tranche d’effectif salarié de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :efetcent,  label: "Effectif salarié de l’entreprise à la centaine près", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :defen,  label: "Année de validité de l’effectif salarié de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :categorie,  label: "Catégorie de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :dcren,  label: "Date de création de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :amintren,  label: "Année et mois d’introduction de l’entreprise dans la base de diffusion", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :monoact,  label: " Indice de monoactivité de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :moden,  label: "Modalité de l’activité principale de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :proden,  label: "Caractère productif de l’entreprise", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esaann,  label: "Année de validité des rubriques de niveau entreprise en provenance de l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :tca,  label: "Tranche de chiffre d’affaires pour les entreprises enquêtées par l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esaapen,  label: "Activité principale de l’entreprise issue de l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esasec1n,  label: "Première activité secondaire déclarée dans l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esasec2n,  label: "Deuxième activité secondaire déclarée dans l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esasec3n,  label: "Troisième activité secondaire déclarée dans l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :esasec4n,  label: "Quatrième activité secondaire déclarée dans l’ESA", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :vmaj,  label: "Nature de la mise à jour (création, suppression, modification)", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :vmaj1,  label: "Indicateur de mise à jour no1", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :vmaj2,  label: "Indicateur de mise à jour no2", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :vmaj3,  label: "Indicateur de mise à jour no3", placeholder: "XX"%>
+      </div>
+      <div class="form-inputs">
+        <%= f.input :datemaj,  label: "Date de traitement de la mise à jour", placeholder: "XX"%>
+      </div>
+      <div class="form-actions text-center">
+        <%= f.button :submit, "Créer société"%>
+      </div>
+<% end %>
